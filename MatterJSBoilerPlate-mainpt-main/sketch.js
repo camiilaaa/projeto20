@@ -52,6 +52,10 @@ function setup() {
 	block3 = Bodies.rectangle(350,50,10,10,block3_options);
 	World.add(world,block3);
 
+	fill("brown");
+	rectMode(CENTER);
+	ellipseMode(RADIUS);
+
 	Engine.run(engine); 
 }
 
@@ -63,7 +67,7 @@ function draw() {
   Engine.update(engine);
   
   ellipse(block1.position.x,block1.position.y,20);
- 
+  rect(block1.position.x,block1.position.y,400,20);
   ellipse(block2.position.x,block2.position.y,40);
   rect(block2.position.x,block2.position.y,70,30);
   ellipse(block3.position.x,block3.position.y,60);
